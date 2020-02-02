@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>Burtons Website</title>
+</head>
+
+<body>
+  <nav class="nav-top navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="/"><img class='logo' src="res/Logo-01-02-01-01-02-01.png" alt="burton"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+      aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link nav-underline" href="/">Introduce <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-underline" href="/learn">LearningExperience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-underline" href="/work">WorksSelection</a>
+        </li>
+        {{!-- <li class="nav-item">
+          <a class="nav-link nav-underline" href="2.html">Notes</a>
+        </li> --}}
+      </ul>
+    </div>
+  </nav>
+  <div class="d-flex justify-content-center align-item-start">
+    {{{body}}}
+
+  </div>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>

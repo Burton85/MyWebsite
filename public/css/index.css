@@ -1,0 +1,362 @@
+body {
+  background-image: url("../res/bg-01.png");
+  background-size: 100%;
+  background-repeat: repeat;
+}
+.container {
+  height: auto;
+  margin: auto;
+}
+.nav-top {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  transition: top 0.5s;
+  border-bottom: 1px solid #dadada;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.logo {
+  height: 45px;
+}
+.navbar {
+  z-index: 11;
+  background-image: url("../res/wood2.jpg");
+  background-repeat: repeat;
+}
+.navbar-toggler {
+  border-color: gray !important;
+}
+span .navbar-toggler-icon {
+  background-color: gray !important;
+}
+nav a {
+  color: #3e9b93 !important;
+  /* 33ada2 */
+  font-size: 1.2rem;
+  font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  /* border-right: 3px solid white; */
+}
+nav a:hover {
+  color: #43ddd0f8 !important;
+}
+.navbar-light button {
+  border: 1.5px solid #88837e;
+}
+.nav-item {
+  padding-left: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.nav-link {
+  max-width: 200px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav-underline-active,
+.nav-underline-active:hover {
+  border-bottom: 2px solid rgba(128, 128, 128, 0.6);
+  text-align: center;
+}
+.nav-underline {
+  position: relative;
+  text-decoration: none;
+  color: rgba(128, 128, 128, 0.6);
+  display: block;
+}
+.nav-underline:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.6);
+}
+.nav-underline:hover:before {
+  width: 90%;
+}
+
+.nav-underline:before {
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -ms-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.container {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin: 0;
+}
+
+.card {
+  -moz-box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
+  -webkit-box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
+  box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
+}
+.card-title {
+  color: #3e9b93;
+  font-family: 微軟正黑體;
+  font-weight: 800;
+}
+.card-text {
+  color: gray;
+  font-family: 微軟正黑體;
+  font-weight: 500;
+}
+ul.cards {
+  width: 100vh;
+  position: relative;
+  left: -8vh;
+  list-style-type: none;
+  cursor: pointer;
+  padding-top: 50px;
+}
+
+ul.cards li.card {
+  margin-bottom: 5vh;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+  border: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
+  transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
+}
+
+ul.cards li.card.card-1 {
+  z-index: 10;
+  -webkit-transform: rotateZ(-2deg);
+  transform: rotateZ(-2deg);
+}
+ul.cards li.card.card-2 {
+  z-index: 9;
+  -webkit-transform: rotateZ(-7deg);
+  transform: rotateZ(-7deg);
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+ul.cards li.card.card-3 {
+  z-index: 8;
+  -webkit-transform: rotateZ(5deg);
+  transform: rotateZ(5deg);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+/* transition */
+ul.cards.transition li.card {
+  -webkit-transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
+}
+ul.cards.transition li.card.card-1 {
+  top: 145vh;
+}
+ul.cards.transition li.card.card-2 {
+  top: 80vh;
+}
+.jumbotron {
+  color: ghostwhite;
+  width: 100vh;
+  margin: 0;
+}
+.j-card2 {
+  background-color: #cbbdb0;
+  border: 3px currentColor #cbbdb0;
+  font-family: 微軟正黑體;
+}
+.j-card1 {
+  background-color: #88837e;
+  border: 3px currentColor #88837e;
+  font-family: 微軟正黑體;
+}
+.j-card3 {
+  background-color: #959696;
+  border: 3px currentColor #959696;
+  font-family: 微軟正黑體;
+}
+.lead {
+  color: #dadada;
+  font-size: medium !important;
+}
+.j-text {
+  color: gainsboro;
+}
+svg.svg {
+  width: 100%;
+  position: relative;
+  top: -100px;
+}
+.svg-con {
+  position: relative;
+  top: -100px;
+  padding-bottom: 0;
+}
+.line-0 {
+  stroke-dasharray: 20000;
+  stroke-dashoffset: 20000;
+}
+.line-0 {
+  animation: drawing-svg 35s;
+  animation-fill-mode: forwards;
+  /* animation-delay: 20s; */
+}
+.line-1 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+.line-1 {
+  animation: drawing-svg 5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.line-2 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+.line-2 {
+  animation: drawing-svg 3s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+.line-4 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+.line-4 {
+  animation: drawing-svg 3s;
+  animation-delay: 1.7s;
+  animation-fill-mode: forwards;
+}
+.line-3 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+.line-3 {
+  animation: drawing-svg 3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+.line-5 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+.line-5 {
+  animation: drawing-svg 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.line-6 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+.line-6 {
+  animation: drawing-svg 3s;
+  animation-delay: 2.4s;
+  animation-fill-mode: forwards;
+}
+.line-7 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+.line-7 {
+  animation: drawing-svg 3s;
+  animation-delay: 2.7s;
+  animation-fill-mode: forwards;
+}
+.line-9 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+.line-9 {
+  animation: drawing-svg 3s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+}
+.line-11 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+.line-11 {
+  animation: drawing-svg 3s;
+  animation-delay: 4.8s;
+  animation-fill-mode: forwards;
+}
+.line-8 {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+}
+.line-8 {
+  animation: drawing-svg 3s;
+  animation-delay: 3.1s;
+  animation-fill-mode: forwards;
+}
+.line-10 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+.line-10 {
+  animation: drawing-svg 3s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.line-12 {
+  stroke-dasharray: 550;
+  stroke-dashoffset: 550;
+}
+.line-12 {
+  animation: drawing-svg 3s;
+  animation-delay: 5.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drawing-svg {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.carousel-item {
+  height: 450px;
+  background-color: whitesmoke;
+}
+.carousel {
+  padding-top: 15px;
+}
+.border-secondary {
+  background-image: url("../res/wood2.jpg");
+  background-repeat: repeat;
+  border: 5px double grey !important;
+}
+
+@media (max-width: 500px) {
+  .carousel-item {
+    height: 150px;
+  }
+}
+@media (max-width: 800px) {
+  .carousel-item {
+    height: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .carousel-item {
+    height: 280px;
+  }
+}
+@media (min-width: 980px) {
+  .carousel-item {
+    height: 450px;
+  }
+}
